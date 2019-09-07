@@ -55,12 +55,12 @@ nav ul li a:hover:not(.active) {
   border: 2em solid yellow;
   border-radius: 0.5em;
 }
-/* 
+
 .active {
   color: white;
   border: 0.1em solid blue;
   border-radius: 0.5em;
-} */
+}
 
 header {
   background-image: url(/images/image2.jpeg);

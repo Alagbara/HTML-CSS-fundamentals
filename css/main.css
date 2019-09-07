@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 100%;
+  line-height: 1.5em;
+  background-color: bisque;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+  line-height: 0.9em;
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li,
+div.button {
+  display: block;
+  width: 100%;
+  background-color: aquamarine;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+div.button {
+  height: 6em;
+  background-color: yellow;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: blue;
+  height: 3em;
+}
+
+nav ul li a:hover:not(.active) {
+  border: 2em solid yellow;
+  border-radius: 0.5em;
+}
+/* 
+.active {
+  color: white;
+  border: 0.1em solid blue;
+  border-radius: 0.5em;
+} */
+
+header {
+  background-image: url(/images/image2.jpeg);
+  padding: 3em;
+  text-align: center;
+  color: blue;
+  border-bottom: 0.5em solid chocolate;
+}
+
+header section h1 {
+  font-size: 8em;
+  padding-top: 0.5em;
+  margin-bottom: 0.75em;
+}
+
+header section p {
+  margin-top: 1em;
+  font-size: 2em;
+  font-family: fantasy;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+a.btn {
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: yellow;
+  color: black;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 2em;
+  text-decoration: none;
+}
+
+a.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+blockquote {
+  padding: 1em;
+  background-color: brown;
+  text-align: center;
+  line-height: 2em;
+  font-size: 2em;
+}
+
+.titles {
+  padding: 1em;
+  line-height: 3em;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: blueviolet;
+}
+.red {
+  color: red;
+  line-height: 1.2em;
+}
+.black {
+  color: black;
+}
+
+footer#second {
+  padding: 2em;
+  text-align: center;
+  line-height: 3em;
+  color: red;
+  background-color: purple;
+  text-transform: uppercase;
+  text-shadow: 0.2em 0.2em black;
+}
+
+.articles {
+  margin: 2em;
+}
+
+.articles section {
+  text-align: center;
+}
+
+.articles section p {
+  text-align: justify;
+  line-height: 2em;
+}
+
+.articles section img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  nav {
+    background-color: aqua;
+  }
+  nav ul li {
+    display: inline-block;
+    width: 8em;
+  }
+
+  .articles section {
+    float: left;
+    width: 31.8571428571%;
+    margin-right: 2%;
+  }
+
+  .articles section:last-child {
+    margin-right: 0;
+  }
+  .articles section img {
+    height: 10em;
+  }
+
+  .articles section p {
+    height: 20em;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 200px) {
+  .small section {
+    float: left;
+    width: 31.8571428571%;
+    margin-right: 2%;
+  }
+  .small section:last-child {
+    margin-right: 0;
+  }
+  .small section h2 {
+    font-size: 1em;
+  }
+}
